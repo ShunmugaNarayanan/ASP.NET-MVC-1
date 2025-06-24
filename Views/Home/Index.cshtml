@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<main>
+    <div class="container-fluid">
+        <div class="mt-4">
+            <h5 id="aspnetTitle" class="my-3">ASP.NET MVC CRUD Operations</h5>
+            <p class="lead my-3">
+                In this project, we will learn about the ASP.NET MVC framework and implement CRUD (Create, Read, Update, Delete) operations.
+            </p>
+        </div>
+        <div class="mt-4">
+            <h6>What is the ASP.NET MVC Framework?</h6>
+            <p>
+                ASP.NET is a part of the .NET framework. It is used to build dynamic web applications on the Windows operating system.
+                ASP.NET MVC (Model-View-Controller) is a design pattern that separates an application into three main components:
+            </p>
+            <ul>
+                <li><strong>Model</strong>: Represents the application's data and business logic.</li>
+                <li><strong>View</strong>: Displays the data (UI) to the user.</li>
+                <li><strong>Controller</strong>: Handles user input, interacts with the model, and returns the appropriate view.</li>
+            </ul>
+        </div>
+
+        <div class="mt-4">
+            <h6>About This Project</h6>
+            <p>
+                This project was created using the .NET Framework 4.8 with the ASP.NET MVC architecture to implement full CRUD operations for user management.
+            </p>
+        </div>
+
+        <div class="mt-4">
+            <h6>How to Use</h6>
+            <p>
+                Click the <strong>"Add User"</strong> button below to add a new user to the system.
+            </p>
+            @Html.ActionLink("Add User", "AddUser", "Users", new { }, new { @class = "btn btn-success mt-2 rounded-pill" })
+        </div>
+    </div>
+</main>
